@@ -120,7 +120,43 @@ font-family: Inter
 display: flex;
 }
 
+/* change your habit */
+
+.image-container{
+    display: flex;
+  justify-content: center;
+  gap: 140px;
+
+}
+
+.image-container h2{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+.image-container p{
+    color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+text-align: center;
+
+}
+
 @media screen and (max-width:576px) {
+
+
+    .banner-container,.image-container{
+     
+        flex-direction: column;
+    }
+    .image-container{
+        align-items: center;
+        gap: 20px;
+    }
+
     .hamburger {
         display: block;
     }
@@ -146,9 +182,6 @@ display: flex;
         display: flex;
     }
 
-    .banner-container{
-        flex-direction: column;
-    }
     .optional1{
         left: 10%;
         

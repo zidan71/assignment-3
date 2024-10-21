@@ -12,7 +12,10 @@
        
 
         <nav>
-            <h1>Fitness</h1>
+            <h1 style="color: rgb(230, 83, 60);
+            font-family: Inter;
+            font-size: 2rem;
+            font-weight: 800;">Fitness</h1>
             <input type="checkbox" id="menu-toggle">
         
        
@@ -117,7 +120,135 @@ background: rgb(230, 83, 60); padding: 8px; padding-bottom: 10px;"><a href="">Ho
 
          </section>
 
-         
+         <!-- training and exercises -->
+          <section class="row" style="width: 80%;
+    margin: 100px auto; border-radius: 18px;">
+
+         <div>
+            <h2 class="text">Trainings and Exercises</h2>
+            <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br> access to a gym.</p> <br>
+         </div>
+
+         <div class="row-1">
+            <div style="position: relative;">
+              <div>
+                <img style="filter: sepia(100%) saturate(1000%) hue-rotate(180deg); /* Adjust color */
+                
+                "  src="images/exercise1.jpg" alt="">
+              </div>
+                <p class="exercise description">Leg Straight</p>
+            </div>
+
+            <div style="position: relative;">
+              <div>
+                <img style="filter: sepia(100%) saturate(1000%) hue-rotate(360deg); /* Adjust color */
+                
+                "  src="images/exercise2.png" alt="">
+              </div>
+                <p class="exercise1 description">Push Up</p>
+            </div>
+
+            <div style="position: relative;">
+              <div>
+                <img src="images/exercise3.png" alt="">
+              </div>
+                <p class="exercise description">Jumping</p>
+            </div>
+         </div>
+
+         <div class="row-2">
+            <div style="position: relative;">
+              <div>
+                <img   src="images/exercise4.png" alt="">
+              </div>
+                <p class="exercise1 description">Bodybuilding</p>
+            </div>
+
+            <div style="position: relative;">
+              <div>
+                <img style="filter: sepia(100%) saturate(200%) hue-rotate(90deg); /* Adjust color */
+                
+                "  src="images/exercise5.jpg" alt="">
+              </div>
+                <p class="exercise description">Hand Exercise</p>
+            </div>
+
+            <div style="position: relative;">
+              <div>
+                <img style="filter: sepia(100%) saturate(900%) hue-rotate(180deg);" src="images/exercise6.jpg" alt="">
+              </div>
+                <p class="exercise description">Situp</p>
+            </div>
+         </div>
+
+
+          </section>
+
+          <!-- bmi calculator -->
+           <section>
+            <div style="text-align: center; margin: 100px auto; margin-top: 70px;">
+                <h1 class="text"> BMI Calculator</h1><br>
+                <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br> access to a gym.</p>
+            </div>
+
+            <div class="bmi-container">
+                <div style="width: 50% ; margin: 60px ;   ">
+                    <h1 style="font-size: 1.5rem;" class="text">BMI Calculator Chart</h1>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>BMI</th>
+                                <th>Weight Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Below 18.5</td>
+                                <td>Underweight</td>
+                            </tr>
+                            <tr>
+                                <td>18.5 - 24.9</td>
+                                <td>Healthy</td>
+                            </tr>
+                            <tr>
+                                <td>25.0 - 29.9</td>
+                                <td>Overweight</td>
+                            </tr>
+                            <tr>
+                                <td>30.0 - and Above</td>
+                                <td>Obese</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="" style="width: 80% ; margin: 50px auto;">
+                    <h1 style="font-size: 1.5rem;" class="text">Calculate your BMI</h1> <br>
+                    <p class="description">
+                        We believe fitness should be accessible to everyone, everywhere, regardless of <br> income or access to a gym. </p>
+
+                        <div class="form-container">
+                            <input type="text" placeholder="Height/cm" name="" id="">
+                            <input type="text" placeholder="Weight/kg" name="" id=""><br><br>
+                            <input type="text" placeholder="Age" name="" id="">
+
+                            <select class="select"  name="" id="">
+                                <option value="">Sex</option>
+                                <option value="">Male</option>
+                                <option value="">Female</option>
+                            </select><br><br>
+                            <select class="select1" name="" id="">
+                                <option value="">Select An activity factor</option>
+                                <option value="">Select An activity factor</option>
+                                <option value="">Select An activity factor</option>
+                            </select><br> <br> <br>
+
+                            <button style="margin-bottom: 50px;" class="btn">Calculate</button>
+                        </div>
+                </div>
+            </div>
+           </section>
     </main>
     <footer>
 

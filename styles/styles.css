@@ -6,7 +6,7 @@
 .text{
     font-family: "Inter", sans-serif;
     font-weight: 900;
-    font-size: 4.8rem;
+    font-size: 4rem;
     color: rgb(255, 255, 255);
 }
 
@@ -145,12 +145,28 @@ text-align: center;
 
 }
 
+
+/* run an extra mile */
+
+.run-container{
+    display: flex;
+    margin-top: 200px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+    
+}
 @media screen and (max-width:576px) {
 
 
-    .banner-container,.image-container{
+    .banner-container,.image-container,.run-container{
      
         flex-direction: column;
+    }
+
+    .run-container{
+        gap: 20px;
     }
     .image-container{
         align-items: center;

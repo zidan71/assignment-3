@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* shared styles */
+*{
+    margin: 0px;
+}
+.text{
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 4.8rem;
+    color: rgb(255, 255, 255);
+}
+
+.description{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btn{
+    padding: 16px 40px 16px 40px;
+    color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 18px;
+font-weight: 600;
+border-radius: 42px;
+background: rgb(230, 83, 60);
+border: none;
+
+}
+
+header{
+    background: rgb(17, 17, 17)
+    
+}
+
+nav li{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 55px;
+}
+
+nav ul {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+    gap: 40px;
+    box-sizing: border-box;
+border: 1px solid rgba(127, 0, 0, 0.1);
+border-radius: 39px;
+padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+   
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.banner-container{
+    display: flex;
+    justify-content:space-between;
+}
+
+.optional{
+    box-sizing: border-box;
+    width: 50%;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+background: rgba(255, 255, 255, 0.1);
+color: white;
+text-align: center;
+padding: 10px;
+position: absolute;
+left: 50%;
+top: 10%;
+font-weight: 600;
+font-family: Inter;
+}
+
+.optional1{
+    
+    top: 70%;
+    right: 75%;
+    box-sizing: border-box;
+    width: 50%;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+background: rgba(255, 255, 255, 0.1);
+color: white;
+text-align: center;
+padding: 10px;
+position: absolute;
+font-weight: 600;
+font-family: Inter
+;
+display: flex;
+}
+
+@media screen and (max-width:576px) {
+    .hamburger {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    nav ul li a{
+        color: black;
+    }
+
+    #menu-toggle:checked + .hamburger + ul {
+        display: flex;
+    }
+
+    .banner-container{
+        flex-direction: column;
+    }
+    .optional1{
+        left: 10%;
+        
+    }
+    .text{
+        font-size: 30px;
+    }
+}

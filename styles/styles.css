@@ -210,22 +210,22 @@ text-align: center;
     
 }
 
-table{
+.bmi-calculator table{
     border-collapse: collapse;
    margin-top: 70px;
 }
 
-td,th{
+.bmi-calculator td,.bmi-calculator th{
     border: 1px solid rgb(123, 103, 97);
     border-collapse: collapse;
     padding: 10px;
 }
-th{
+.bmi-calculator th{
     color: white;
     padding: 20px;
     text-align: left;
 }
-td{
+.bmi-calculator td{
     color: rgba(255, 255, 255, 0.5);
     padding: 20px;
 }
@@ -250,7 +250,29 @@ margin-top: 20px;
     width: 48%;
 }
 
-
+/* challenge */
+.challenge table{
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+ 
+}
+.challenge th, .challenge td{
+    border: 1px solid rgb(124, 105, 105);
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+}
+.challenge th{
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+}
+.challenge td{
+    
+    color:bisque;
+}
 /* our team */
 
 .our-team{
@@ -406,5 +428,51 @@ font-weight: 700;
     .harami{
       
         padding-left: 40px;
+    }
+
+    /* challenge */
+
+    .challenge ul{
+        flex-direction: column;
+    }
+    .challenge{
+        display: flex;
+        flex-direction: column;
+    }
+    .challenge th, .challenge td {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    
+    
+    
+    .challenge th,
+    .challenge td,
+    .challenge tr {
+        display: block;
+        width: 100%;
+    }
+
+    .challenge thead {
+        display: none;
+    }
+
+    .challenge tr {
+        margin-bottom: 15px;
+       
+    }
+
+    .challenge td {
+        text-align: center;
+        font-weight: bold;
+        color: bisque;
+       
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .challenge th {
+        font-size: 1rem;
     }
 }
